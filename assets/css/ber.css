@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.navbar {
+    padding-top: 35px;
+    position: fixed;
+    width: 100%;
+}
+
+.container {
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.saya {
+    color: black;
+}
+
+.mengadu {
+    color: #75FFC7;
+}
+
+.menu {
+    margin-left: auto;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Muli';
+    font-size: 20px;
+}
+
+.col-5 {
+    width: 41.66%;
+    flex: 0 0 41.66%;
+}
+
+.col-7 {
+    width: 58.33%;
+    flex: 0 0 58.33%;
+}
+
+.img {
+    width: 860px;
+    height: 790px;
+    border-bottom-left-radius: 1000px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.heading {
+    margin: 0;
+    padding-top: 35%;
+    font-family: Georgia;
+    font-size: 50px;
+}
+
+p {
+    font-size: 17px;
+    color: #9a9a9a;
+}
+
+.btn-masuk {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial;
+    background: #75FFC7;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px #9a9a9a;
+}

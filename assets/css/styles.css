@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f2f2f2;
+}
+
+nav {
+    background: black;
+}
+
+nav .logo {
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.saya {
+    color: white;
+}
+
+.mengadu {
+    color: #75FFC7;
+}
+
+nav::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+
+nav ul li {
+    float: left;
+    display: inline-block;
+    background: black;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 30px;
+    font-size: 15px;
+    padding: 8px 15px;
+}
+
+nav ul li a:hover {
+    color: cyan;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px white;
+}
