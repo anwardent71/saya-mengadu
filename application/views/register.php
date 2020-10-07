@@ -54,7 +54,7 @@
                 </div>
                 <div class="col-lg-5 px-5 pt-5">
                     <h1 style="text-align: center;" class="font-weight-bold py-3">Daftar Akun</h1>
-                    <form  action="<?= base_url('c_login/register') ?>" method="post">
+                    <?= form_open_multipart('c_login/register') ?>
                         <div class="form-row">
                             <div class="col-lg-7">
                                 <input type="number"  placeholder="NIK" name="Nik" class="form-action my-2" style="text-align: center; height: 30px; width: 400px;" value="<?= set_value('Nik') ?>">
@@ -94,7 +94,7 @@
                             </div>
                         </div>
                         <p> Sudah Memiliki Akun ? <a href="aksi_login2"> Masuk</a></p>
-                    </form>
+                    <? form_close() ?>
                 </div>
             </div>
         </div>

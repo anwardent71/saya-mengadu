@@ -20,10 +20,9 @@
             <a href="homeuser"><span class="saya">Saya <span class="mengadu">Mengadu</span></span></a>
         </div>
         <ul>
-            <li><a href="homeuser">Home</a></li>
+            <li><a href="homeuser">Halaman Depan</a></li>
             <li><a href="ajukan">Ajukan Pengaduan</a></li>
-            <li><a href="riwayat">Riwayat Pengaduan</a></li>
-            <li><a href="">Profilku</a></li>
+            <li><a href="profilku">Profilku</a></li>
             <li><a href="<?= base_url().'c_beranda/' ?>">Keluar</a></li>
         </ul>
     </nav>

@@ -2,6 +2,29 @@
 
 Class m_login extends CI_Model
 {
+    private function uploadImageReg()
+    {
+        $config['upload_path'] 			= './assets/img/profil/';
+		$config['allowed_types']        = 'gif|jpg|png';
+        $config['max_size']             = 5120;
+        $config['max_width']            = '4480';
+        $config['max_height']           = '4480';
+        $config['file_name']            = 'image'. time();
+
+        $this->upload->initialize($config);
+
+        if (!empty('image'.time())) {
+            if ($this->upload->do_upload('image')) {
+                return $this->upload->data('file_name');
+            }
+            else {
+                print_r($this->upload->display_errors());
+            }
+        }
+        else {
+            echo "Gambar gagal di upload, silahkan ulangi";
+        }
+    }
 
     public function aksi_login()
     {
@@ -89,8 +112,8 @@ Class m_login extends CI_Model
                 'nama' => htmlspecialchars($this->input->post('Nama', true)),
                 'username' => htmlspecialchars($this->input->post('Username', true)),
                 'password' => password_hash($this->input->post('Password'), PASSWORD_DEFAULT),
-                'no_telp' => $this->input->post('No_telp')
-                // 'image' => $this->uploadImage()
+                'no_telp' => $this->input->post('No_telp'),
+                'image' => $this->uploadImageReg(),
             );
 
             
